@@ -134,8 +134,10 @@ public class ViewHandler : MonoBehaviour {
 		}
 
 		activeView.OnBackButtonPressed();
-		if(activeView.IsRootScreen() == false) {
-			activeView.Hide();
+		if (activeView.IsRootScreen () == false) {
+			activeView.Hide ();
+		} else {
+			activeView.OnRootScreenBack ();
 		}
 	}
 

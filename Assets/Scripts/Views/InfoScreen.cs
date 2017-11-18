@@ -13,9 +13,14 @@ public class InfoScreen : View {
 	void Update () {
 		
 	}
-
-	public void OnTestPopupClicked() {
-		NotificationDialog notifDiaglog = (NotificationDialog) DialogBuilder.Create (DialogBuilder.DialogType.NOTIFICATION);
-		notifDiaglog.SetMessage ("Test popup");
+		
+	public override void OnRootScreenBack ()
+	{
+		base.OnRootScreenBack ();
+		TwoChoiceDialog twoChoiceDialog = (TwoChoiceDialog)DialogBuilder.Create (DialogBuilder.DialogType.CHOICE_DIALOG);
+		twoChoiceDialog.SetMessage ("Exit the application?");
+		twoChoiceDialog.SetOnConfirmListener (() => {
+			Application.Quit();
+		});
 	}
 }

@@ -196,6 +196,13 @@ public class View : MonoBehaviour {
 	public virtual void OnHideCompleted() {
 		ViewHandler.Instance.OnViewHidden(this);
 	}
+
+	/// <summary>
+	/// Only called if the view is a root screen
+	/// </summary>
+	public virtual void OnRootScreenBack() {
+
+	}
 	#endregion
 
 }
