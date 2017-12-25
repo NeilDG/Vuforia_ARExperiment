@@ -137,8 +137,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Align your camera with the image centered in your screen. Good lighting
-    is required.
+  m_Text: Align your camera with the image centered in your screen. Swipe left or
+    right to rotate the cube.
 --- !u!114 &114865724168459266
 MonoBehaviour:
   m_ObjectHideFlags: 1
